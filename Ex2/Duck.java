@@ -1,9 +1,9 @@
 package Ex2;
 
 public abstract class Duck {
-    void swim() {
+    public void swim() {
         System.out.println("The Duck is swimming");
     };
 
-    abstract void display();
+    public abstract void display();
 }

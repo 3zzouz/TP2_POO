@@ -20,10 +20,24 @@ public class Library {
         }
     }
 
+    public void lendBook(Book book, LibraryUser user) {
+        user.borrowBook(book);
+        try {
+            removeBook(book);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
     public void removeBook(Book book) throws Exception {
         if (books.size() <= 0)
             throw new Exception("No books in the library");
         books.remove(book);
+    }
+
+    public void returnBook(Book book, LibraryUser user) {
+        user.returnBook(book);
+        addBook(book);
     }
 
 }

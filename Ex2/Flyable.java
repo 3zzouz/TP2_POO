@@ -1,5 +1,5 @@
 package Ex2;
 
-interface Flyable {
+public interface Flyable {
     void fly();
 }

@@ -1,7 +1,7 @@
 package Ex2;
 
 public class RedheadDuck extends Duck implements Flyable, Quackable {
-    void display() {
+    public void display() {
         System.out.println("The RedheadDuck is on display");
     }
 

@@ -1,5 +1,5 @@
 package Ex2;
 
-interface Quackable {
+public interface Quackable {
     void quack();
 }
